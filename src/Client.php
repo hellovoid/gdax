@@ -64,7 +64,7 @@ class Client
     private function getAndDecodeData($path, array $params = [])
     {
         if ($response = $this->http->get($path, $params + ($this->getPagination() ?
-                $this->getPagination()->prepareParams() : null))) {
+                $this->getPagination()->prepareParams() : []))) {
             return $this->decodeResponse($response->getBody()->getContents());
         }
     }
