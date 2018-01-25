@@ -237,4 +237,9 @@ class Client
     {
         return $this->getAndDecodeData('currencies');
     }
+
+    public function getTime()
+    {
+        return $this->getAndDecodeData('time');
+    }
 }
