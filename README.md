@@ -1,5 +1,4 @@
 # GDAX PHP API Client Library
-[![Latest Stable Version](https://poser.pugx.org/hellovoid/gdax/v/stable)](https://packagist.org/packages/hellovoid/gdax) [![Total Downloads](https://poser.pugx.org/hellovoid/gdax/downloads)](https://packagist.org/packages/hellovoid/gdax) [![License](https://poser.pugx.org/hellovoid/gdax/license)](https://packagist.org/packages/hellovoid/gdax)
 
 This is the unofficial client library for the [GDAX API][1].
 Inspired by [Coinbase PHP Library][2].
