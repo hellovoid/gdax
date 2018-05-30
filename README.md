@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://poser.pugx.org/hellovoid/gdax/v/stable)](https://packagist.org/packages/hellovoid/gdax)
+[![Total Downloads](https://poser.pugx.org/hellovoid/gdax/downloads)](https://packagist.org/packages/hellovoid/gdax)
+[![License](https://poser.pugx.org/hellovoid/gdax/license)](https://packagist.org/packages/hellovoid/gdax)
 # GDAX PHP API Client Library
 
 This is the unofficial client library for the [GDAX API][1].
