@@ -7,8 +7,8 @@ use GuzzleHttp\ClientInterface;
 
 class Configuration
 {
-    const DEFAULT_API_URL = 'https://api.gdax.com';
-    const SANDBOX_API_URL = 'https://api-public.sandbox.gdax.com';
+    const DEFAULT_API_URL = 'https://api.pro.coinbase.com';
+    const SANDBOX_API_URL = 'https://api-public.sandbox.pro.coinbase.com';
 
     private $authentication;
     private $apiUrl;
