@@ -19,20 +19,28 @@ class Configuration
      * @param string $apiKey    An API key
      * @param string $apiSecret An API secret
      * @param string $apiPassphrase An API passphrase
+     * @param bool $isSandbox is API working in sandbox mode
      *
      * @return Configuration A new configuration instance
      */
-    public static function apiKey($apiKey, $apiSecret, $apiPassphrase)
-    {
+    public static function apiKey($apiKey, $apiSecret, $apiPassphrase, $isSandbox)
+    {        
         return new static(
-            new Authentication($apiKey, $apiSecret, $apiPassphrase)
+            new Authentication($apiKey, $apiSecret, $apiPassphrase), 
+            $isSandbox
         );
     }
 
-    public function __construct(Authentication $authentication)
-    {
+    public function __construct(Authentication $authentication, $isSandbox)
+    {        
         $this->authentication = $authentication;
-        $this->apiUrl = self::DEFAULT_API_URL;
+        
+        if ($isSandbox) {
+            $this->apiUrl = self::SANDBOX_API_URL;
+        }
+        else {
+            $this->apiUrl = self::DEFAULT_API_URL;
+        }
     }
 
     /**
